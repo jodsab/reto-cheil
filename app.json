@@ -19,7 +19,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/images/adaptive-icon.png",
         "backgroundColor": "#ffffff"
-      }
+      },
+      "package": "com.jodsab.retocheil"
     },
     "web": {
       "bundler": "metro",
@@ -27,10 +28,24 @@
       "favicon": "./assets/images/favicon.png"
     },
     "plugins": [
+      [
+        "expo-font",
+        {
+          "fonts": [
+            "./assets/fonts/Starjedi.ttf",
+            "./assets/fonts/Starjhol.ttf"
+          ]
+        }
+      ],
       "expo-router"
     ],
     "experiments": {
       "typedRoutes": true
+    },
+    "extra": {
+      "eas": {
+        "projectId": "4ea14f8f-4d47-4392-94e6-eca41aed15c8"
+      }
     }
   }
 }
